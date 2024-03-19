@@ -1,4 +1,6 @@
-package modelo;
+package app;
+
+import modelo.Rectangulo;
 
 public class MainFiguras {
 

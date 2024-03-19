@@ -28,9 +28,6 @@ public class Rectangulo {
     	
     }
 
-    
-    
-   
     /**
      * @param base
      */
