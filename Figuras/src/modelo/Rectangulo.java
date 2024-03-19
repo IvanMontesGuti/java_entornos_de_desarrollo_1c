@@ -15,6 +15,8 @@ public class Rectangulo {
      * @param base 
      * @param altura
      */
+    
+    //constructor por defecto con base y altura a 1
     public void rectangulo() {
     	this.base=1;
     	this.altura=1;
@@ -25,6 +27,8 @@ public class Rectangulo {
      * @param base 
      * @param altura
      */
+    
+    //constructor para asignar valores a base y altura
     public void rectangulo(int base, int altura) {
     	
     	this.base=base;
@@ -35,6 +39,8 @@ public class Rectangulo {
     /**
      * @param base
      */
+    
+    
     public int getBase() {
         
     	return base;
@@ -69,7 +75,9 @@ public class Rectangulo {
      * @param altura 
      * @param base
      */
-    public int Area(int altura, int base) {
+    
+    //devuelve el area del rectangulo
+    public int Area() {
         
     	return altura * base;
     }
@@ -78,7 +86,9 @@ public class Rectangulo {
      * @param altura 
      * @param base
      */
-    public int Perimetro(int altura, int base) {
+    
+    //devuelve el perimetro del rectangulo
+    public int Perimetro() {
         
     	return (2*altura)+(2*base);
     }
