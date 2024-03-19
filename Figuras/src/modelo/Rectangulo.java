@@ -5,6 +5,10 @@ import java.util.*;
 public class Rectangulo {
 
     public Rectangulo() {
+    	this.base=1;
+    	this.altura=1;
+        
+    	
     }
 
  
@@ -17,25 +21,16 @@ public class Rectangulo {
      */
     
     //constructor por defecto con base y altura a 1
-    public void rectangulo() {
-    	this.base=1;
-    	this.altura=1;
-        
-    }
-
-    /**
-     * @param base 
-     * @param altura
-     */
-    
-    //constructor para asignar valores a base y altura
-    public void rectangulo(int base, int altura) {
+    public Rectangulo(int base , int altura) {
     	
     	this.base=base;
     	this.altura=altura;
-       
+    	
     }
 
+    
+    
+   
     /**
      * @param base
      */
@@ -43,7 +38,7 @@ public class Rectangulo {
     
     public int getBase() {
         
-    	return base;
+    	return this.base;
     }
 
     /**
