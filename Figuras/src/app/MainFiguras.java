@@ -10,16 +10,19 @@ public class MainFiguras {
 		// TODO Auto-generated method stub
 
 		
-		Rectangulo rectangulo1 = new Rectangulo (2,4);
-		Circulo circulo1 = new Circulo (3);
-		Triangulo triangulo1= new Triangulo (4,5);
 		
-		
-		System.out.println("Perimetro de rectangulo: "+rectangulo1.Perimetro());
-		System.out.println("Area de rectangulo: "+rectangulo1.Area());
-		System.out.println("Perimetro del círculo: "+circulo1.getPerimetro());
-		System.out.println("Area del círculo: "+circulo1.getArea());
-		System.out.println("Area del triangulo: "+triangulo1.getArea());
+		Triangulo triangulo= new Triangulo (1,2);
+		Double Area1 = triangulo.getArea();
+		System.out.println("Area del triangulo: "+Area1);
+		triangulo.setBase(2);
+		Double Area2 = triangulo.getArea();
+		System.out.println("Area del triangulo: "+Area2);
+		Circulo circulo = new Circulo (2);
+		circulo.getArea();
+		circulo.setRadio(3);
+		Double perimetro1 = circulo.getPerimetro();
+		System.out.println(perimetro1);
+
 	}
 
 }

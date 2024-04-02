@@ -3,15 +3,11 @@ package modelo;
 import java.util.*;
 
 public class Rectangulo {
-
     public Rectangulo() {
     	this.base=1;
-    	this.altura=1;
-        
-    	
+    	this.altura=1;	
     }
 
- 
     private int base;
     private int altura;
 
