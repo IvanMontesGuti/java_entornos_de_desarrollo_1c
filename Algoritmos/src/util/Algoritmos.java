@@ -14,4 +14,18 @@ public abstract class Algoritmos {
 		}
 		return numSumatorio;
 	}
+	
+	/**
+	 * Devuelve el factorial del numero especificado
+	 * @param n   el numero del que queremos calcular el factorial
+	 * @return         el factorial del numero especificado
+	 */
+	public static int factorial (int n) {
+		int numFactorial =1;
+		for (int i = 1; i <= n; i++) {
+            numFactorial = numFactorial * i;
+        }
+		return numFactorial;
+	}
+	
 }

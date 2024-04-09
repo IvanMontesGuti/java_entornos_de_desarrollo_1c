@@ -9,6 +9,10 @@ public class main {
 		
 		int s1 = Algoritmos.sumatorio(10);
 		int s2 = Algoritmos.sumatorio(0);
+		
+		int f1;
+		System.out.print(Algoritmos.factorial(4));
+		
 
 	}
 
