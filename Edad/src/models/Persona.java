@@ -2,9 +2,9 @@ package models;
 
 public class Persona {
 	
-	String nombre;
-	String apellidos;
-	int edad;
+	private String nombre;
+	private String apellidos;
+	private int edad;
 	
 	public Persona() {
 		this.nombre=nombre;
@@ -82,7 +82,7 @@ public class Persona {
 	 * Comprueba si la edad introducida es menor de edad, mayor de edad, o jubilado
 	 * @return menor de edad en caso de ser menor de 18, mayor de edad en caso de ser mayor de 18 y jubilado si es mayor a 65
 	 */
-	public String mostrarEdad() {
+	public  String mostrarEdad() {
 		String mensaje ="";
 		
 		if (edad<18) {
