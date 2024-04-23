@@ -57,7 +57,7 @@ class Testss {
 	void testEdadParamLimiteArriba() {
 
 		Exception excepcion = assertThrows(IllegalArgumentException.class,
-				()->new Persona ("l","n",-1).mostrarEdad());
+				()->new Persona ("l","n",131).mostrarEdad());
 
 		String esperado = "La edad debe estar entre 0 y 130";
 				String obtenido = excepcion.getMessage();
