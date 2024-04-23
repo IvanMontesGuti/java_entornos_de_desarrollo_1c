@@ -5,10 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import models.Persona;
-import util.Algoritmos;
 
-class testEdad {
-	
+class Testss {
+
 	@Test
 	void testEdadMenor() {
 	
@@ -56,10 +55,9 @@ class testEdad {
 }
 	@Test
 	void testEdadParamLimiteArriba() {
-	
-		Persona p1 = new Persona ("l","n",131);
+
 		Exception excepcion = assertThrows(IllegalArgumentException.class,
-				()->p1.mostrarEdad());
+				()->new Persona ("l","n",-1).mostrarEdad());
 
 		String esperado = "La edad debe estar entre 0 y 130";
 				String obtenido = excepcion.getMessage();
@@ -69,9 +67,9 @@ class testEdad {
 }
 	@Test
 	void testEdadParamLimiteAbajo() {
-		Persona p1 = new Persona ("l","n",-1);
+		
 		Exception excepcion = assertThrows(IllegalArgumentException.class,
-				()->p1.mostrarEdad());
+				()->new Persona ("l","n",-1).mostrarEdad());
 
 		String esperado = "La edad debe estar entre 0 y 130";
 				String obtenido = excepcion.getMessage();
@@ -88,5 +86,5 @@ class testEdad {
 		assertEquals(mensajeEsperado,mensajeObtenido);
 
 }
-	
+
 }
