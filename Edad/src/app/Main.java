@@ -9,7 +9,7 @@ public class Main {
 		
 		Persona persona1 =new Persona("Ivan","Montes",19);
 		
-		System.out.print(persona1.mostrarEdad(persona1.getEdad()));
+		System.out.print(persona1.mostrarEdad());
 
 	}
 

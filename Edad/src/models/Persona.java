@@ -6,11 +6,18 @@ public class Persona {
 	String apellidos;
 	int edad;
 	
+	public Persona() {
+		this.nombre=nombre;
+		this.apellidos=apellidos;
+		this.edad=edad;
+	}
+	
 	/**
 	 * 
 	 * @param nombre nombre de la persona del objeto
 	 * @param apellidos apellidos de la persona del objeto
 	 * @param edad edad de la persona del objeto, deberá ser mayor de 0 y menor de 130
+	 * @throws IllegalArgumentException
 	 */
 	public Persona(String nombre,String apellidos,int edad) {
 		
@@ -73,16 +80,15 @@ public class Persona {
 
 	/**
 	 * Comprueba si la edad introducida es menor de edad, mayor de edad, o jubilado
-	 * @param edad  la edad para comprobar si es menor mayor de edad o jubilado
 	 * @return menor de edad en caso de ser menor de 18, mayor de edad en caso de ser mayor de 18 y jubilado si es mayor a 65
 	 */
-	public String mostrarEdad(int edad) {
+	public String mostrarEdad() {
 		String mensaje ="";
 		
 		if (edad<18) {
-			mensaje ="Es menor de edad";
+			mensaje ="Menor de edad";
 		}else if (edad>=18&&edad<65) {
-			mensaje ="Es mayor de edad";
+			mensaje ="Mayor de edad";
 		}else if(edad>=65) {
 			mensaje ="Jubilado";
 		}
